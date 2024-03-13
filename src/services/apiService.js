@@ -39,6 +39,6 @@ export const addProduct = async (product) => {
 
 // Edits an existing product by ID
 export const editProduct = (id, product) => {
-    return axios.put(`${BASE_URL}/${product.id}`, JSON.stringify{product});
+    return axios.put(`${BASE_URL}/${product.id}`, JSON.stringify(product));
     // implement it using similar logic as addProduct function but use axios.put method
 };
